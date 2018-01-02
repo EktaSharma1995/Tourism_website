@@ -145,8 +145,6 @@ div.sub_menu {
 }
 
 div.sub_menu div {
-	background: #1321ff;
-	padding: 5px;
 	color: #fff;
 	width: auto;
 	font-variant: small-caps;
@@ -172,8 +170,8 @@ div.sub_menu a:hover {
 
 div.content {
 	width: 31.25em;
-	margin-top: -21.1em;
-	margin-left: 14.375em;
+	margin-top: -3.1em;
+    margin-left: 17.375em;
 }
 
 form, input {
@@ -192,3 +190,64 @@ div.display-container.mySlides {
 button.button.display-left.black {
 	margin-left: -0.5em;
 }
+
+.bar-right{
+  float:right!important;
+  color:blue;
+}
+
+.dropdown {
+    width:60%;
+    margin-right:2003;
+    width:25%; height:20%;
+    align-content:center;
+    position: relative;
+    display: inline-block;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.dropbtn {
+    /* background-color:whitesmoke; */
+    width: 9.5em;
+    color: black;
+    border-color:white;
+    /* border-radius:1em; */
+    /* padding: 4%; */
+    font-size:1.25em;
+    font-family: Verdana, Arial, sans-serif;
+    cursor: pointer;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 4% 16px;
+    text-decoration: none;
+    border-radius:1em;
+    display: block;
+}
+
+.dropdown-content a:hover {
+     background-image:url(images/wallpaper.jpg);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color:white;
+}
+
+.content {
+	margin-top: -5.5em;
+}
+

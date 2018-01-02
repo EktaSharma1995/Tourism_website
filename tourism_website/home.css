@@ -1,0 +1,135 @@
+html { height: 100%;} 
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url(images/wallpaper.jpg);
+    background-repeat:repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#logo{
+    height:4em;    
+    margin-left:5px;
+	width:1200;
+	
+}
+
+.bar-button{
+  border:none;
+  display:inline-block;
+  padding-right:1em;
+  vertical-align:middle;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  font-family: Verdana, Arial, sans-serif;
+  font-weight:bolder;
+  font-size:.80em;  
+  margin-top:10%;
+
+}
+
+.bar-right{
+  float:right!important;
+  color:blue;
+}
+
+.top{
+  border-radius:.5em;
+  margin-right:10px;
+  color:#000!important;
+  background-color:whitesmoke;
+}
+
+.intropart{
+    height:18em;
+}
+
+.dropdown {
+    width:60%;
+    margin-right:2003;
+    width:25%; height:20%;
+    align-content:center;
+    position: relative;
+    display: inline-block;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+figure{
+    margin-top:1%;
+}
+
+#intro{
+    margin-top:1em;
+    margin-left:1em;
+    float:left;
+    width:45%;
+    font-size:1.25em;
+}
+
+
+.dropbtn {
+    background-color:whitesmoke;
+    width: 100%;
+    color: black;
+    border-color:white;
+    border-radius:1em;
+    padding: 4%;
+    font-size:1.25em;
+    font-family: Verdana, Arial, sans-serif;
+    cursor: pointer;
+	
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 4% 16px;
+    text-decoration: none;
+    border-radius:1em;
+    display: block;
+}
+
+.dropdown-content a:hover {
+     background-image:url(images/wallpaper.jpg);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color:white;
+}
+
+
+div.content {
+	width: 500px;
+	 
+	padding-left:400px; 
+}
+div.content p{
+	
+	width:950px;
+	
+}	
+footer p{
+	
+	
+float:right;	
+}
+footer{
+	
+	background-color:grey;
+	
+}
