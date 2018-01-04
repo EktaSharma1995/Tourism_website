@@ -15,9 +15,9 @@
 		</div>
 		<div class="menu">
 		<div class="bar-right">
-				<a href="#" class="bar-button">Home</a> &nbsp &nbsp <a href="#"
+				<a href="Home.html" class="bar-button">Home</a> &nbsp &nbsp <a href="#"
 					class="bar-button">Faqs</a> &nbsp &nbsp <a href="#"
-					class="bar-button">Contact Us</a> &nbsp &nbsp <a href="#"
+					class="bar-button">Contact Us</a> &nbsp &nbsp <a href="About_Us.html"
 					class="bar-button">About Us</a> &nbsp &nbsp
 			</div>
 		</div>
@@ -60,6 +60,12 @@
 				known as "Little Tibet", is renowned for its remote mountain beauty
 				and Buddhist culture.
 			</p>
+			
+				<div>
+					<a href="http://www.cnn.com"><img src="images/Hill-Stationin.jpg"
+						name="slideshow" id="slideshow" width="500" height="250"></a>
+				</div>
+				
 			<h1>
 				<a href="http://www.humber.ca" target="_blank">Tours to Srinagar</a>
 			</h1>
@@ -173,8 +179,39 @@
 		</div>
 	</div>
 	</div>
+	
+	<script>
+		
+		var myImagesArray = [ "images/jandK.jpg",
+				"images/northinidanculture.jpg", "images/pahalgaam.jpg","images/risingkashmir.jpg", 
+				"images/TulipsFlower.jpg","images/placesinj&k.jpg" ,"images/visitinSrinagar.jpg",];
+
+		var ImageNumber = 0;
+		var difference = myImagesArray.length - 1;
+
+		var delay = 1000; //milliseconds    1sec=1000milliseconds
+
+		setInterval("ChangeImages(-1)", delay);
+
+		function ChangeImages(direction) { //begin function
+			if (document.images) { //begin outer if
+				ImageNumber = ImageNumber + direction;
+
+				if (ImageNumber > difference) { //begin inner first if
+					ImageNumber = 0;
+				} //end inner first if
+
+				if (ImageNumber < 0) { //begin inner second if
+					ImageNumber = difference;
+				} 
+				//document.slideshow.src = myImagesArray[ImageNumber];
+				document.getElementById('slideshow').src = myImagesArray[ImageNumber];
+
+			} 
+		} 
+	</script>
 	<footer>
-		Copyright &copy; 2018 Tourist Guide </br> All rights reserved</br>esharma1995@gmail.com
+				Copyright &copy; 2018 Tourist Guide All rights reserved
 	</footer>
 </body>
 </html>

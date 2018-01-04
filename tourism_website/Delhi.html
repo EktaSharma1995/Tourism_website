@@ -15,9 +15,9 @@
 		</div>
 		<div class="menu">
 			<div class="bar-right">
-				<a href="#" class="bar-button">Home</a> &nbsp &nbsp <a href="#"
+				<a href="Home.html" class="bar-button">Home</a> &nbsp &nbsp <a href="#"
 					class="bar-button">Faqs</a> &nbsp &nbsp <a href="#"
-					class="bar-button">Contact Us</a> &nbsp &nbsp <a href="#"
+					class="bar-button">Contact Us</a> &nbsp &nbsp <a href="About_Us.html"
 					class="bar-button">About Us</a> &nbsp &nbsp
 			</div>
 		</div>
@@ -47,6 +47,11 @@
 				Delhi, you will be visiting a number of religious, historical and
 				political sites.
 			</p>
+			
+				<div>
+					<a href="http://www.cnn.com"><img src="images/RashtrapatiBhawan.jpg"
+						name="slideshow" id="slideshow" width="500" height="250"></a>
+				</div>
 			<h1>
 				<a href="http://www.humber.ca" target="_blank">Tours to Red Fort</a>
 			</h1>
@@ -103,7 +108,40 @@
 		</div>
 	</div>
 	</div>
-		<footer>Copyright &copy; 2018 Tourist Guide </br> All rights reserved</br>esharma1995@gmail.com </footer>
+	
+	<script>
+		
+		var myImagesArray = [ "images/AgrasenkiBaoliHdImage.jpg",
+				"images/akshardham.jpg", "images/BeautifulLotusTemple.jpg","images/DelhiRajgadhParedIndependence.jpg", 
+				"images/humayunstomb.jpg","images/Masjidinnight.jpg" ,"images/QutubMinar1.jpg",];
+
+		var ImageNumber = 0;
+		var difference = myImagesArray.length - 1;
+
+		var delay = 1000; //milliseconds    1sec=1000milliseconds
+
+		setInterval("ChangeImages(-1)", delay);
+
+		function ChangeImages(direction) { 
+			if (document.images) { 
+				ImageNumber = ImageNumber + direction;
+
+				if (ImageNumber > difference) { 
+					ImageNumber = 0;
+				} 
+
+				if (ImageNumber < 0) { 
+					ImageNumber = difference;
+				} 
+				//document.slideshow.src = myImagesArray[ImageNumber];
+				document.getElementById('slideshow').src = myImagesArray[ImageNumber];
+
+			} 
+		} 
+	</script>
+		<footer>		
+		Copyright &copy; 2018 Tourist Guide All rights reserved
+		</footer>
 
 </body>
 </html>

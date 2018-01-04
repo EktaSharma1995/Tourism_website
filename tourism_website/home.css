@@ -1,4 +1,4 @@
-html { height: 100%;} 
+﻿html { height: 100%;} 
 body{
     height: 100%;
     width: 100%;
@@ -11,8 +11,6 @@ body{
 #logo{
     height:4em;    
     margin-left:5px;
-	width:1200;
-	
 }
 
 .bar-button{
@@ -50,7 +48,7 @@ body{
 
 .dropdown {
     width:60%;
-    margin-right:2003;
+    margin:4% 0 0 14%;
     width:25%; height:20%;
     align-content:center;
     position: relative;
@@ -81,7 +79,6 @@ figure{
     font-size:1.25em;
     font-family: Verdana, Arial, sans-serif;
     cursor: pointer;
-	
 }
 
 .dropdown-content {
@@ -111,25 +108,20 @@ figure{
 .dropdown:hover .dropbtn {
     background-color:white;
 }
+table{
+    margin-left:5%;
+}
+td img{
+    margin-left:25px;
+    height:250px;
+    width:500px;
+}
 
+figcaption{
+    font-size:1.3em;
+    align-content:center;
+    font-weight:bold;
+    font-family: Verdana, Arial, sans-serif;
+    margin-bottom:1%;
+}
 
-div.content {
-	width: 500px;
-	 
-	padding-left:400px; 
-}
-div.content p{
-	
-	width:950px;
-	
-}	
-footer p{
-	
-	
-float:right;	
-}
-footer{
-	
-	background-color:grey;
-	
-}

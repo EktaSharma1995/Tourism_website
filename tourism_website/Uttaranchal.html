@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>J&K</title>
+<title>Uttaranchal</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" media="screen"
 	href="Uttaranchal.css" />
@@ -16,9 +16,9 @@
 		</div>
 		<div class="menu">
 		<div class="bar-right">
-				<a href="#" class="bar-button">Home</a> &nbsp &nbsp <a href="#"
+				<a href="Home.html" class="bar-button">Home</a> &nbsp &nbsp <a href="#"
 					class="bar-button">Faqs</a> &nbsp &nbsp <a href="#"
-					class="bar-button">Contact Us</a> &nbsp &nbsp <a href="#"
+					class="bar-button">Contact Us</a> &nbsp &nbsp <a href="About_Us.html"
 					class="bar-button">About Us</a> &nbsp &nbsp
 			</div>
 		</div>
@@ -55,6 +55,10 @@
 				largest city of the state, which is a railhead. The High Court of
 				the state is located in Nainital.
 			</p>
+				<div>
+					<a href="http://www.cnn.com"><img src="images/generaluttaranchal.jpg"
+						name="slideshow" id="slideshow" width="500" height="250"></a>
+				</div>
 			<h1>
 				<a href="http://www.humber.ca" target="_blank">Tours to Jim
 					Corbett National Park</a>
@@ -102,8 +106,39 @@
 		</div>
 	</div>
 	</div>
+	
+	<script>
+		
+		var myImagesArray = [ "images/Image8.jpg",
+				"images/kumaon.jpg", "images/uttaranc.jpg","images/road-view.jpg", 
+				"images/Uttaranchal1.jpg", "images/8Uttaranchal.jpg", "images/corbettjeepsafari3.jpg"];
+
+		var ImageNumber = 0;
+		var difference = myImagesArray.length - 1;
+
+		var delay = 1000; //milliseconds    1sec=1000milliseconds
+
+		setInterval("ChangeImages(-1)", delay);
+
+		function ChangeImages(direction) { 
+			if (document.images) { 
+				ImageNumber = ImageNumber + direction;
+
+				if (ImageNumber > difference) { 
+					ImageNumber = 0;
+				} 
+
+				if (ImageNumber < 0) { 
+					ImageNumber = difference;
+				} 
+				//document.slideshow.src = myImagesArray[ImageNumber];
+				document.getElementById('slideshow').src = myImagesArray[ImageNumber];
+
+			} 
+		} 
+	</script>
 	<footer>
-		Copyright &copy; 2018 Tourist Guide </br> All rights reserved</br>esharma1995@gmail.com
+				Copyright &copy; 2018 Tourist Guide All rights reserved
 	</footer>
 </body>
 </html>
